@@ -31,12 +31,31 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-// The gallery scrolls by -50%, so its tiles are duplicated for a seamless loop.
-const track = document.querySelector('.marquee-track');
-if (track) {
-  [...track.children].forEach((tile) => {
-    const copy = tile.cloneNode(true);
-    copy.setAttribute('aria-hidden', 'true');
-    track.appendChild(copy);
-  });
+// Live Instagram posts via a Behold.so JSON feed; the static photos stay if the feed is unset or fails.
+const ig = document.querySelector('.ig[data-feed]');
+if (ig && ig.dataset.feed) {
+  fetch(ig.dataset.feed)
+    .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+    .then((feed) => {
+      const posts = (feed.posts || []).slice(0, 6);
+      if (!posts.length) return;
+      const grid = ig.querySelector('.ig-grid');
+      grid.replaceChildren(...posts.map((post) => {
+        const link = document.createElement('a');
+        link.className = 'ig-post';
+        if (post.mediaType === 'VIDEO') link.classList.add('is-video');
+        link.href = post.permalink;
+        link.target = '_blank';
+        link.rel = 'noopener';
+
+        const img = document.createElement('img');
+        const size = post.sizes && (post.sizes.medium || post.sizes.small);
+        img.src = (size && size.mediaUrl) || post.thumbnailUrl || post.mediaUrl;
+        img.alt = post.altText || (post.prunedCaption || 'Instagram post').slice(0, 120);
+        img.loading = 'lazy';
+        link.appendChild(img);
+        return link;
+      }));
+    })
+    .catch(() => {});
 }
