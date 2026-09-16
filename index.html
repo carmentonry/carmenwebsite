@@ -6,17 +6,152 @@
   <title>Carmen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="blob blob-a"></div>
-  <div class="blob blob-b"></div>
 
-  <main>
-    <p class="eyebrow">bienvenida</p>
-    <h1>Hola, soy<br><span>Carmen</span></h1>
-    <p class="tagline">esto es apenas el comienzo de mi sitio.</p>
-  </main>
+  <nav class="nav">
+    <a class="nav-logo" href="#inicio">Carmen</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#contenido">Contenido</a></li>
+      <li><a href="#viajes">Viajes</a></li>
+      <li><a href="#periodismo">Periodismo</a></li>
+      <li><a href="#operaciones">Operaciones</a></li>
+      <li><a href="#tienda">Tienda</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="hero-content">
+      <p class="eyebrow">viajes · fotografía · historias</p>
+      <h1>Hola, soy<br><span>Carmen</span></h1>
+      <p class="tagline"><!-- TODO: reemplaza con tu propia frase --> [Una línea corta que resuma lo que haces: contenido de viaje, periodismo y experiencias internacionales.]</p>
+      <a class="scroll-cue" href="#contenido">Explora mi trabajo ↓</a>
+    </div>
+  </header>
+
+  <section id="contenido" class="section section-light">
+    <div class="section-inner">
+      <p class="eyebrow">contenido & redes</p>
+      <h2>Contenido de viaje & UGC</h2>
+      <p class="lead">[Cuenta aquí sobre tu contenido de viaje en TikTok e Instagram, y el trabajo de UGC que haces o quieres empezar a hacer para marcas.]</p>
+      <div class="card-grid">
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-label">TikTok</span>
+          <span class="card-value">[@tu-usuario]</span>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-label">Instagram</span>
+          <span class="card-value">[@tu-usuario]</span>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-label">Portafolio UGC</span>
+          <span class="card-value">[link a tu reel o media kit]</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="viajes" class="section section-dark">
+    <div class="section-inner">
+      <p class="eyebrow">viajes grupales & trip planning</p>
+      <h2>Viajes internacionales & planeación</h2>
+      <p class="lead">[Explica aquí los group trips que organizas en alianza con empresas como Worldpackers, y tus servicios de planeación de viajes y excursiones.]</p>
+      <div class="card-grid">
+        <div class="card card-static">
+          <span class="card-label">Group Trips</span>
+          <span class="card-value">[Próximo destino / fecha / partner]</span>
+          <a href="#contacto" class="card-link">Más info →</a>
+        </div>
+        <div class="card card-static">
+          <span class="card-label">Trip Planning</span>
+          <span class="card-value">[Cómo trabajas como trip planner, qué incluye]</span>
+          <a href="#contacto" class="card-link">Agenda una consulta →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="periodismo" class="section section-light">
+    <div class="section-inner">
+      <p class="eyebrow">periodismo</p>
+      <h2>Historias en video & escritas</h2>
+      <p class="lead">[Presenta tu trabajo periodístico: reportajes, historias de viaje, piezas de investigación, en texto y video.]</p>
+      <div class="story-grid">
+        <article class="story-card">
+          <div class="story-thumb">Foto / video</div>
+          <span class="story-tag">Escrito</span>
+          <h3>[Título de la historia]</h3>
+        </article>
+        <article class="story-card">
+          <div class="story-thumb">Foto / video</div>
+          <span class="story-tag">Video</span>
+          <h3>[Título de la historia]</h3>
+        </article>
+        <article class="story-card">
+          <div class="story-thumb">Foto / video</div>
+          <span class="story-tag">Escrito</span>
+          <h3>[Título de la historia]</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="operaciones" class="section section-dark">
+    <div class="section-inner">
+      <p class="eyebrow">operaciones & estrategia</p>
+      <h2>Product ops & estrategia de viaje internacional</h2>
+      <p class="lead">[Describe tu experiencia o interés en operaciones de producto y estrategia de operaciones de viaje internacional: qué tipo de proyectos buscas, con qué empresas te gustaría trabajar.]</p>
+    </div>
+  </section>
+
+  <section id="tienda" class="section section-light">
+    <div class="section-inner">
+      <p class="eyebrow">tienda & descuentos</p>
+      <h2>Códigos de descuento & mi Amazon Storefront</h2>
+      <p class="lead">[Agrega aquí tu explicación breve de la tienda y los códigos de descuento que ofreces.]</p>
+      <div class="card-grid">
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-label">Amazon Storefront</span>
+          <span class="card-value">[link a tu storefront]</span>
+        </a>
+        <div class="card card-static">
+          <span class="card-label">Código de descuento</span>
+          <span class="card-value">[Marca — CÓDIGO]</span>
+        </div>
+        <div class="card card-static">
+          <span class="card-label">Código de descuento</span>
+          <span class="card-value">[Marca — CÓDIGO]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section section-dark contact">
+    <div class="section-inner">
+      <p class="eyebrow">trabajemos juntos</p>
+      <h2>¿Colaboramos?</h2>
+      <p class="lead">[Invita a marcas, partners o viajeros a contactarte, y di para qué tipo de proyectos estás disponible.]</p>
+      <a class="email-link" href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+      <div class="social-row">
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Carmen</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
