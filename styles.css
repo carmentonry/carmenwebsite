@@ -378,25 +378,7 @@ h1 em, h2 em {
   margin-top: 1rem;
 }
 
-/* ---------- media placeholders ---------- */
-
-.ph {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: var(--grain);
-  background-blend-mode: soft-light;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(13, 28, 69, 0.55);
-}
-
-.ph-1 { background-color: #c9dbf2; }
-.ph-2 { background-color: #f4c98e; }
-.ph-3 { background-color: #9fb8e6; }
-.ph-4 { background-color: #f2a878; }
+/* ---------- media ---------- */
 
 .snapshot-media img,
 .snapshot-media video,
@@ -453,7 +435,7 @@ h1 em, h2 em {
   align-items: center;
   gap: 14px;
   width: max-content;
-  animation: roll 45s linear infinite;
+  animation: roll 70s linear infinite;
 }
 
 .filmstrip:hover .film-track {
