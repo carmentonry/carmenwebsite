@@ -1,5 +1,6 @@
 :root {
   --bg: #f4f2ee;
+  --night: #0b1020;
   --ink: #0b1020;
   --ink-2: #4a5064;
   --line: rgba(11, 16, 32, 0.12);
@@ -10,7 +11,8 @@
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-body.dark {
+body.dark,
+.theme-dark body {
   --bg: #0b1020;
   --ink: #f4f2ee;
   --ink-2: rgba(244, 242, 238, 0.62);
@@ -192,7 +194,7 @@ h2 {
   min-height: 560px;
   overflow: hidden;
   color: #fff;
-  background: var(--ink);
+  background: var(--night);
 }
 
 .hero-video {
@@ -204,7 +206,7 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(var(--shade), 0.45) 0%, rgba(var(--shade), 0.05) 35%, rgba(var(--shade), 0.7) 100%);
+  background: linear-gradient(180deg, rgba(var(--shade), 0.35) 0%, rgba(var(--shade), 0) 30%, rgba(var(--shade), 0.6) 100%);
 }
 
 .hero-content {
@@ -274,7 +276,7 @@ h2 {
 
 .trip {
   background: var(--orange);
-  color: var(--ink);
+  color: var(--night);
 }
 
 .trip-inner {
@@ -310,7 +312,7 @@ h2 {
   gap: 0.5rem;
   padding: 0.85rem 1.4rem;
   border-radius: 999px;
-  background: var(--ink);
+  background: var(--night);
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
@@ -320,7 +322,7 @@ h2 {
 
 .btn:hover {
   background: #fff;
-  color: var(--ink);
+  color: var(--night);
 }
 
 /* ---------- gallery ---------- */
@@ -375,8 +377,11 @@ h2 {
 
 /* ---------- path cards ---------- */
 
-.section-head {
-  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+.paths-heading {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  letter-spacing: -0.015em;
+  color: var(--ink-2);
 }
 
 .paths {
@@ -448,7 +453,7 @@ h2 {
   height: 3rem;
   border-radius: 50%;
   background: #fff;
-  color: var(--ink);
+  color: var(--night);
   font-size: 1.15rem;
   transition: background 0.25s ease, color 0.25s ease;
 }

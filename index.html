@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carmen Amelia Tonry | Travel & Media</title>
-  <meta name="description" content="Carmen Amelia Tonry: travel and media. Group trips, travel tips and resources, UGC, photography, videography, travel writing, and travel operations strategy.">
+  <meta name="description" content="Carmen Amelia Tonry: travel and media. Group trips, travel planning, UGC, photography, videography, travel writing, and travel operations strategy.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script>try{var t=new URLSearchParams(location.search).get("theme");if(t)sessionStorage.setItem("theme",t);if(sessionStorage.getItem("theme")==="dark")document.documentElement.classList.add("theme-dark")}catch(e){}</script>
 </head>
 <body class="home">
 
@@ -20,14 +21,17 @@
     <ul class="nav-links">
       <li><a href="./#about">About</a></li>
       <li><a href="./#travel-with-me">Travel With Me</a></li>
-      <li><a href="resources.html">Tips &amp; Resources</a></li>
+      <li><a href="planning.html">Travel Planning</a></li>
       <li><a href="work.html">Work With Me</a></li>
       <li><a href="./#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero">
-    <video class="hero-video" src="media/hero-ocean.mp4" poster="media/hero-ocean-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
+    <video class="hero-video" poster="media/hero-ocean-poster.jpg" autoplay muted loop playsinline aria-hidden="true">
+      <source src="media/hero-ocean.mp4" type="video/mp4" media="(max-width: 800px)">
+      <source src="media/hero-ocean-1080.mp4" type="video/mp4">
+    </video>
     <div class="hero-content">
       <h1 class="hero-name">Carmen Amelia Tonry</h1>
       <p class="hero-tag">Travel <span>&amp;</span> Media</p>
@@ -81,17 +85,14 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Explore</p>
-        <h2>Where would you like to go?</h2>
-      </div>
+      <h2 class="paths-heading">Where would you like to go?</h2>
       <div class="paths">
-        <a class="path reveal" href="resources.html">
+        <a class="path reveal" href="planning.html">
           <img class="path-img" src="media/sunset-balcony.jpg" alt="" loading="lazy">
           <span class="path-arrow" aria-hidden="true">↗</span>
           <span class="path-body">
             <span class="path-for">For travelers &amp; followers</span>
-            <span class="path-title">Travel Tips &amp; Resources</span>
+            <span class="path-title">Travel Planning</span>
           </span>
         </a>
         <a class="path reveal" href="work.html">
@@ -127,6 +128,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=8"></script>
 </body>
 </html>
