@@ -6,9 +6,9 @@
   --line: rgba(11, 34, 48, 0.12);
   --accent: #ff8a3d;
   --link: #0f4c5c;
-  --about-bg: #e4eefb;
-  --trip-bg: #ff8fb8;
-  --ig-bg: #fdf0c4;
+  --about-bg: #fffcf0;
+  --trip-bg: #c41d63;
+  --ig-bg: #fffcf0;
   --paths-bg: #0f4c5c;
   --contact-bg: #2d6cdf;
   --footer-bg: #071821;
@@ -289,7 +289,7 @@ h2 {
 
 .trip {
   background: var(--trip-bg);
-  color: var(--night);
+  color: #fff;
 }
 
 .trip-inner {
@@ -302,7 +302,7 @@ h2 {
 
 .trip .eyebrow {
   margin: 0;
-  color: rgba(11, 34, 48, 0.7);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .trip h3 {
@@ -316,7 +316,7 @@ h2 {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(11, 34, 48, 0.7);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .btn {
