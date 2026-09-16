@@ -1,18 +1,23 @@
 :root {
-  --bg: #f4f2ee;
-  --night: #0b1020;
-  --ink: #0b1020;
-  --ink-2: #4a5064;
-  --line: rgba(11, 16, 32, 0.12);
-  --cobalt: #2346d8;
-  --orange: #ff6a2b;
-  --shade: 8, 14, 40;
+  --bg: #f6f4ec;
+  --night: #0b2230;
+  --ink: #0b2230;
+  --ink-2: #4f5d66;
+  --line: rgba(11, 34, 48, 0.12);
+  --accent: #ff8a3d;
+  --link: #0f4c5c;
+  --trip-bg: #ffc93c;
+  --ig-bg: #cdebe6;
+  --paths-bg: #0f4c5c;
+  --contact-bg: #2d6cdf;
+  --footer-bg: #071821;
+  --shade: 7, 24, 33;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 body.dark {
-  --bg: #0b1020;
+  --bg: var(--night);
   --ink: #f4f2ee;
   --ink-2: rgba(244, 242, 238, 0.62);
   --line: rgba(244, 242, 238, 0.14);
@@ -80,14 +85,14 @@ h2 {
 
 .text-link {
   text-decoration: underline;
-  text-decoration-color: var(--orange);
+  text-decoration-color: var(--accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
   transition: color 0.2s ease;
 }
 
 .text-link:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .section {
@@ -160,8 +165,8 @@ h2 {
 }
 
 .nav-links .nav-cta:hover {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--accent);
+  border-color: var(--accent);
   color: #fff;
 }
 
@@ -235,7 +240,7 @@ h2 {
 }
 
 .hero-tag span {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 @keyframes fade-up {
@@ -257,48 +262,28 @@ h2 {
   border-radius: 2px;
 }
 
-.about-text h2 {
-  margin-bottom: 1.75rem;
-  font-size: clamp(2rem, 3.8vw, 3.25rem);
-  line-height: 1.02;
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem 2rem;
-  margin-top: 2.25rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid var(--line);
-}
-
-.facts dt {
-  margin-bottom: 0.3rem;
-  font-family: 'Geist Mono', monospace;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--ink-2);
-}
-
-.facts dd {
-  font-weight: 500;
-}
-
 .about-text p:not(.eyebrow) {
-  max-width: 36rem;
+  max-width: 34rem;
   font-size: 1.125rem;
   color: var(--ink-2);
 }
 
+.about-text .eyebrow + p {
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
 .about-text p + p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 /* ---------- travel with me ---------- */
 
 .trip {
-  background: var(--orange);
+  background: var(--trip-bg);
   color: var(--night);
 }
 
@@ -312,7 +297,7 @@ h2 {
 
 .trip .eyebrow {
   margin: 0;
-  color: rgba(11, 16, 32, 0.7);
+  color: rgba(11, 34, 48, 0.7);
 }
 
 .trip h3 {
@@ -326,7 +311,7 @@ h2 {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(11, 16, 32, 0.7);
+  color: rgba(11, 34, 48, 0.7);
 }
 
 .btn {
@@ -352,7 +337,7 @@ h2 {
 
 .ig {
   padding-block: clamp(3.5rem, 7vw, 5.5rem);
-  background: #dce7fb;
+  background: var(--ig-bg);
 }
 
 .ig-head {
@@ -377,12 +362,12 @@ h2 {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--cobalt);
+  color: var(--link);
   transition: color 0.2s ease;
 }
 
 .ig-follow:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .ig-grid {
@@ -396,7 +381,7 @@ h2 {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 2px;
-  background: rgba(11, 16, 32, 0.08);
+  background: rgba(11, 34, 48, 0.08);
 }
 
 .ig-post img,
@@ -425,7 +410,7 @@ h2 {
 .paths-section {
   --ink: #f4f2ee;
   --ink-2: rgba(244, 242, 238, 0.62);
-  background: var(--night);
+  background: var(--paths-bg);
   color: var(--ink);
 }
 
@@ -511,7 +496,7 @@ h2 {
 }
 
 .path:hover .path-arrow {
-  background: var(--orange);
+  background: var(--accent);
   color: #fff;
 }
 
@@ -519,7 +504,7 @@ h2 {
 
 .contact {
   padding-block: clamp(5rem, 10vw, 9rem);
-  background: var(--cobalt);
+  background: var(--contact-bg);
   color: #fff;
 }
 
@@ -543,7 +528,7 @@ h2 {
 }
 
 .email:hover {
-  border-color: var(--orange);
+  border-color: var(--accent);
 }
 
 .socials {
@@ -563,14 +548,14 @@ h2 {
 }
 
 .socials a:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 /* ---------- footer ---------- */
 
 .footer {
   padding-block: 1.75rem;
-  background: #070b17;
+  background: var(--footer-bg);
   color: rgba(244, 242, 238, 0.55);
   font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
@@ -607,7 +592,7 @@ h2 {
 }
 
 .back:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .page-hero h1 {
@@ -687,7 +672,7 @@ a.row:hover {
 }
 
 a.row:hover .row-title {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .row-desc {
@@ -758,7 +743,7 @@ a.row:hover .row-title {
 }
 
 .next:hover .next-title {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .next:hover .next-title span {
