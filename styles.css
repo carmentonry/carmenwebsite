@@ -7,7 +7,7 @@
   --accent: #ff8a3d;
   --link: #0f4c5c;
   --about-bg: #fffcf0;
-  --trip-bg: #43c6b4;
+  --trip-bg: #cbe8f6;
   --trip-ink: #0b2230;
   --trip-ink-2: rgba(11, 34, 48, 0.7);
   --ig-bg: #fffef8;
@@ -776,7 +776,7 @@ a.row:hover .row-title {
 
 /* ---------- responsive ---------- */
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .nav-toggle { display: flex; }
 
   .nav-links {
