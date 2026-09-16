@@ -4,170 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carmen Amelia Tonry | Travel & Media</title>
-  <meta name="description" content="Carmen Amelia Tonry: travel and media. Group trips, trip planning, UGC, photography, videography, travel writing, and travel operations strategy.">
+  <meta name="description" content="Carmen Amelia Tonry: travel and media. Group trips, travel tips and resources, UGC, photography, videography, travel writing, and travel operations strategy.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <nav class="nav">
-    <a class="nav-logo" href="#home">Carmen Amelia Tonry</a>
+    <a class="nav-logo" href="./">Carmen Amelia Tonry</a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#travel-with-me">Travel With Me</a></li>
-      <li><a href="#work-with-me">Work With Me</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
+      <li><a href="./#about">About</a></li>
+      <li><a href="journey.html">Start Your Journey</a></li>
+      <li><a href="work.html">Work With Me</a></li>
+      <li><a href="./#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
-  <header id="home" class="hero">
+  <header class="hero">
+    <div class="viewfinder" aria-hidden="true">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <div class="vf-row vf-top">
+        <span class="rec"><i></i>REC</span>
+        <span class="timecode">00:00:00:00</span>
+      </div>
+      <div class="vf-row vf-bottom">
+        <span>@carmenscamera</span>
+        <span>ISO 400 · f/2.8</span>
+      </div>
+    </div>
+
     <div class="sun" aria-hidden="true"></div>
-    <h1 class="hero-name">Carmen <em>Amelia</em> Tonry</h1>
-    <p class="hero-tag">Travel <span>&amp;</span> Media</p>
+    <div class="hero-inner">
+      <p class="scribble" aria-hidden="true">hi, i'm</p>
+      <h1 class="hero-name">Carmen <em>Amelia</em> Tonry</h1>
+      <p class="hero-tag"><span class="tape"></span>Travel <em>&amp;</em> Media</p>
+    </div>
   </header>
 
   <section id="about" class="section">
     <div class="wrap about">
-      <div class="about-photo reveal">Your photo here</div>
+      <figure class="snapshot reveal">
+        <span class="tape tape-top"></span>
+        <div class="snapshot-media ph ph-1">
+          <!-- Replace with: <img src="media/about.jpg" alt="Carmen traveling"> -->
+          <span>your photo here</span>
+        </div>
+        <figcaption>somewhere new · 2026</figcaption>
+      </figure>
       <div class="about-text reveal">
-        <p class="eyebrow">About</p>
+        <p class="label">About</p>
         <h2>Hi, I'm Carmen.</h2>
         <p>I'm solo traveling the world and helping others do the same. I'm studying journalism in university, and I'm building a business that brings together everything I love: travel, photography, videography, writing, research, and meeting people everywhere I go.</p>
-        <p>You can find me as <strong>@carmenscamera</strong> on TikTok, Instagram, and YouTube.</p>
+        <p>Find me as <strong>@carmenscamera</strong> on TikTok, Instagram, and YouTube.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section-paths">
+  <section class="reel">
+    <div class="wrap reel-head">
+      <p class="label">Camera roll</p>
+      <h2>Through my lens</h2>
+    </div>
+    <div class="filmstrip">
+      <!-- Each frame can hold an <img src="media/..."> or <video src="media/..." autoplay muted loop playsinline></video> -->
+      <div class="film-track">
+        <figure class="frame"><div class="frame-media ph ph-1"><span>frame 01</span></div></figure>
+        <figure class="frame tall"><div class="frame-media ph ph-2"><span>frame 02</span></div></figure>
+        <figure class="frame"><div class="frame-media ph ph-3"><span>frame 03</span></div></figure>
+        <figure class="frame tall"><div class="frame-media ph ph-4"><span>frame 04</span></div></figure>
+        <figure class="frame"><div class="frame-media ph ph-2"><span>frame 05</span></div></figure>
+        <figure class="frame tall"><div class="frame-media ph ph-1"><span>frame 06</span></div></figure>
+        <figure class="frame"><div class="frame-media ph ph-4"><span>frame 07</span></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section paths-section">
     <div class="wrap">
-      <p class="eyebrow center">Where would you like to go?</p>
+      <p class="label center">Where would you like to go?</p>
       <div class="paths">
-        <a class="path reveal" href="#travel-with-me">
+        <a class="path reveal" href="journey.html">
+          <span class="tape tape-top"></span>
+          <span class="path-no">01</span>
           <span class="path-for">For travelers &amp; followers</span>
-          <span class="path-title">Travel With Me</span>
-          <span class="path-list">Group trips · Trip planning · Travel blog · Shop · Discount codes</span>
+          <span class="path-title">Start Your <em>Journey</em></span>
           <span class="path-arrow">→</span>
         </a>
-        <a class="path path-dark reveal" href="#work-with-me">
+        <a class="path path-dark reveal" href="work.html">
+          <span class="tape tape-top"></span>
+          <span class="path-no">02</span>
           <span class="path-for">For brands &amp; businesses</span>
-          <span class="path-title">Work With Me</span>
-          <span class="path-list">UGC · Photo &amp; video · Travel writing · Travel operations</span>
+          <span class="path-title">Work <em>With Me</em></span>
           <span class="path-arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="travel-with-me" class="section">
-    <div class="wrap">
-      <header class="section-head">
-        <p class="eyebrow">For travelers &amp; followers</p>
-        <h2>Travel With Me</h2>
-        <p class="lead">Trips, planning help, and my favorite finds for your next adventure.</p>
-      </header>
-
-      <div class="rows">
-        <a class="row reveal" href="https://chat.whatsapp.com/FKAaQu9WQhG2dxmVBWzwGS" target="_blank" rel="noopener">
-          <span class="row-num">01</span>
-          <span class="row-body">
-            <span class="row-title">Group Trips <span class="pill">Now booking</span></span>
-            <span class="row-desc">Costa Rica Girls Surf &amp; Yoga Trip, 2027</span>
-          </span>
-          <span class="row-cta">Join the group →</span>
-        </a>
-        <a class="row reveal" href="https://linktr.ee/carmenscamera" target="_blank" rel="noopener">
-          <span class="row-num">02</span>
-          <span class="row-body">
-            <span class="row-title">Trip Planning</span>
-            <span class="row-desc">A 1:1 travel design meeting to plan your trip together</span>
-          </span>
-          <span class="row-cta">Book a meeting →</span>
-        </a>
-        <div class="row reveal">
-          <span class="row-num">03</span>
-          <span class="row-body">
-            <span class="row-title">Travel Blog</span>
-            <span class="row-desc">Guides, stories, and solo travel tips</span>
-          </span>
-          <span class="row-cta muted">Coming soon</span>
-        </div>
-        <a class="row reveal" href="https://www.amazon.com/shop/carmenscamera" target="_blank" rel="noopener">
-          <span class="row-num">04</span>
-          <span class="row-body">
-            <span class="row-title">Shop My Travel Essentials</span>
-            <span class="row-desc">Everything I pack, on my Amazon Storefront</span>
-          </span>
-          <span class="row-cta">Shop →</span>
-        </a>
-        <a class="row reveal" href="https://linktr.ee/carmenscamera" target="_blank" rel="noopener">
-          <span class="row-num">05</span>
-          <span class="row-body">
-            <span class="row-title">Discount Codes</span>
-            <span class="row-desc">$10 off Worldpackers</span>
-          </span>
-          <span class="row-cta">Get the code →</span>
-        </a>
-        <div class="row reveal">
-          <span class="row-num">06</span>
-          <span class="row-body">
-            <span class="row-title">Follow Along</span>
-            <span class="row-desc">Daily travel content from wherever I am</span>
-          </span>
-          <span class="row-links">
-            <a href="https://www.tiktok.com/@carmenscamera" target="_blank" rel="noopener">TikTok</a>
-            <a href="https://www.instagram.com/carmenscameraaa" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.youtube.com/@carmenscameraa" target="_blank" rel="noopener">YouTube</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="work-with-me" class="section section-dark">
-    <div class="wrap">
-      <header class="section-head">
-        <p class="eyebrow">For brands &amp; businesses</p>
-        <h2>Work With Me</h2>
-        <p class="lead">Creative and operations work for travel, lifestyle, and media companies.</p>
-      </header>
-
-      <div class="rows">
-        <a class="row reveal" href="https://carmenscamera.my.canva.site" target="_blank" rel="noopener">
-          <span class="row-num">01</span>
-          <span class="row-body">
-            <span class="row-title">UGC &amp; Brand Collaborations</span>
-            <span class="row-desc">Short-form video and photo content that feels real</span>
-          </span>
-          <span class="row-cta">View portfolio →</span>
-        </a>
-        <a class="row reveal" href="#contact">
-          <span class="row-num">02</span>
-          <span class="row-body">
-            <span class="row-title">Photography &amp; Videography</span>
-            <span class="row-desc">Travel, lifestyle, and destination shoots</span>
-          </span>
-          <span class="row-cta">Inquire →</span>
-        </a>
-        <a class="row reveal" href="#contact">
-          <span class="row-num">03</span>
-          <span class="row-body">
-            <span class="row-title">Travel Writing &amp; Interviews</span>
-            <span class="row-desc">Destination features, stories, and interviews</span>
-          </span>
-          <span class="row-cta">Inquire →</span>
-        </a>
-        <a class="row reveal" href="https://www.linkedin.com/in/carmen-amelia-tonry-478890346/" target="_blank" rel="noopener">
-          <span class="row-num">04</span>
-          <span class="row-body">
-            <span class="row-title">Travel Operations Strategy</span>
-            <span class="row-desc">Product and international travel operations</span>
-          </span>
-          <span class="row-cta">View LinkedIn →</span>
         </a>
       </div>
     </div>
@@ -175,7 +109,7 @@
 
   <section id="contact" class="section contact">
     <div class="wrap">
-      <p class="eyebrow center">Contact</p>
+      <p class="label center">Contact</p>
       <h2>Let's talk.</h2>
       <a class="email" href="mailto:carmentonry@icloud.com">carmentonry@icloud.com</a>
       <div class="socials">
@@ -188,7 +122,7 @@
   </section>
 
   <footer class="footer">
-    <p>© 2026 Carmen Amelia Tonry</p>
+    <p>© 2026 Carmen Amelia Tonry · shot on carmenscamera</p>
   </footer>
 
   <script src="script.js"></script>
