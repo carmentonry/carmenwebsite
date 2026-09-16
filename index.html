@@ -7,10 +7,10 @@
   <meta name="description" content="Carmen Amelia Tonry: travel and media. Group trips, travel tips and resources, UGC, photography, videography, travel writing, and travel operations strategy.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Caveat:wght@600&family=Shrikhand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
-<body>
+<body class="home">
 
   <nav class="nav">
     <a class="nav-logo" href="./">Carmen Amelia Tonry</a>
@@ -20,118 +20,113 @@
     <ul class="nav-links">
       <li><a href="./#about">About</a></li>
       <li><a href="./#travel-with-me">Travel With Me</a></li>
-      <li><a href="toolkit.html">Travel Toolkit</a></li>
+      <li><a href="resources.html">Tips &amp; Resources</a></li>
       <li><a href="work.html">Work With Me</a></li>
       <li><a href="./#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero">
-    <div class="viewfinder" aria-hidden="true">
-      <span class="corner tl"></span><span class="corner tr"></span>
-      <span class="corner bl"></span><span class="corner br"></span>
-      <div class="vf-row vf-top">
-        <span class="rec"><i></i>REC</span>
-        <span class="timecode">00:00:00:00</span>
-      </div>
-      <div class="vf-row vf-bottom">
-        <span>@carmenscamera</span>
-        <span>ISO 400 · f/2.8</span>
-      </div>
-    </div>
-
-    <div class="sun" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <p class="scribble" aria-hidden="true">hi, i'm</p>
-      <h1 class="hero-name">Carmen <em>Amelia</em> Tonry</h1>
-      <p class="hero-tag"><span class="tape"></span>Travel <em>&amp;</em> Media</p>
+    <video class="hero-video" src="media/hero-ocean.mp4" poster="media/hero-ocean-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="hero-content">
+      <h1 class="hero-name">Carmen Amelia Tonry</h1>
+      <p class="hero-tag">Travel <span>&amp;</span> Media</p>
     </div>
   </header>
 
   <section id="about" class="section">
     <div class="wrap about">
-      <figure class="snapshot reveal">
-        <span class="tape tape-top"></span>
-        <div class="snapshot-media">
-          <img src="media/about-carmen.jpg" alt="Carmen Amelia Tonry smiling in front of tall reeds at golden hour" width="1119" height="1400">
-        </div>
-        <figcaption>hi from carmen :)</figcaption>
-      </figure>
+      <div class="about-media reveal">
+        <img src="media/about-carmen.jpg" alt="Carmen Amelia Tonry at golden hour" width="1119" height="1400">
+      </div>
       <div class="about-text reveal">
-        <p class="label">About</p>
+        <p class="eyebrow">About</p>
         <h2>Hi, I'm Carmen.</h2>
         <p>I'm solo traveling the world and helping others do the same. I'm studying journalism in university, and I'm building a business that brings together everything I love: travel, photography, videography, writing, research, and meeting people everywhere I go.</p>
-        <p>Find me as <strong>@carmenscamera</strong> on TikTok, Instagram, and YouTube.</p>
+        <p>Find me as <a class="text-link" href="https://www.tiktok.com/@carmenscamera" target="_blank" rel="noopener">@carmenscamera</a> on TikTok, Instagram, and YouTube.</p>
       </div>
     </div>
   </section>
 
-  <section class="reel">
-    <div class="wrap reel-head">
-      <p class="label">Camera roll</p>
-      <h2>Through my lens</h2>
+  <section id="travel-with-me" class="trip">
+    <div class="wrap trip-inner reveal">
+      <p class="eyebrow">Travel With Me</p>
+      <div class="trip-main">
+        <h3>Costa Rica Girls Surf &amp; Yoga Trip</h3>
+        <p>Group trip · 2027 · Now booking</p>
+      </div>
+      <a class="btn" href="https://chat.whatsapp.com/FKAaQu9WQhG2dxmVBWzwGS" target="_blank" rel="noopener">Join the group <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="filmstrip">
-      <!-- Each frame can hold an <img src="media/..."> or <video src="media/..." autoplay muted loop playsinline></video> -->
-      <div class="film-track">
-        <figure class="frame"><div class="frame-media"><video src="media/waterfall.mp4" poster="media/waterfall-poster.jpg" autoplay muted loop playsinline aria-label="Carmen standing beneath a misty waterfall"></video></div></figure>
-        <figure class="frame tall"><div class="frame-media"><img src="media/morocco-doorway.jpg" alt="Carmen in a tiled Moroccan doorway overlooking the mountains"></div></figure>
-        <figure class="frame"><div class="frame-media"><img src="media/sigiriya.jpg" alt="Carmen looking out at Sigiriya rock in Sri Lanka"></div></figure>
-        <figure class="frame tall"><div class="frame-media"><img src="media/flower-selfie.jpg" alt="Carmen with an orange flower in her hair"></div></figure>
-        <figure class="frame"><div class="frame-media"><video src="media/waves.mp4" poster="media/waves-poster.jpg" autoplay muted loop playsinline aria-label="Waves crashing over rocks at golden hour"></video></div></figure>
-        <figure class="frame tall"><div class="frame-media"><img src="media/yoga.jpg" alt="Carmen doing the splits in an open-air bamboo yoga shala"></div></figure>
-        <figure class="frame"><div class="frame-media"><img src="media/pink-sunset.jpg" alt="Pink and purple sunset over palm trees"></div></figure>
-        <figure class="frame tall"><div class="frame-media"><img src="media/sunset-balcony.jpg" alt="Carmen watching a jungle sunset from a balcony"></div></figure>
-        <figure class="frame"><div class="frame-media"><video src="media/drone-ocean.mp4" poster="media/drone-ocean-poster.jpg" autoplay muted loop playsinline aria-label="Drone shot of a boat on turquoise water"></video></div></figure>
+  </section>
+
+  <section class="gallery">
+    <div class="wrap gallery-head">
+      <p class="eyebrow">Through my lens</p>
+      <h2>Places I've been lately.</h2>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <figure class="tile wide"><video src="media/waterfall.mp4" poster="media/waterfall-poster.jpg" autoplay muted loop playsinline aria-label="Carmen standing beneath a misty waterfall"></video></figure>
+        <figure class="tile tall"><img src="media/morocco-doorway.jpg" alt="Carmen in a tiled Moroccan doorway overlooking the mountains"></figure>
+        <figure class="tile"><img src="media/sigiriya.jpg" alt="Carmen looking out at Sigiriya rock in Sri Lanka"></figure>
+        <figure class="tile tall"><img src="media/flower-selfie.jpg" alt="Carmen with an orange flower in her hair"></figure>
+        <figure class="tile wide"><video src="media/waves.mp4" poster="media/waves-poster.jpg" autoplay muted loop playsinline aria-label="Waves crashing over rocks at golden hour"></video></figure>
+        <figure class="tile tall"><img src="media/yoga.jpg" alt="Carmen doing the splits in an open-air bamboo yoga shala"></figure>
+        <figure class="tile"><img src="media/pink-sunset.jpg" alt="Pink and purple sunset over palm trees"></figure>
+        <figure class="tile tall"><img src="media/sunset-balcony.jpg" alt="Carmen watching a jungle sunset from a balcony"></figure>
+        <figure class="tile wide"><video src="media/drone-ocean.mp4" poster="media/drone-ocean-poster.jpg" autoplay muted loop playsinline aria-label="Drone shot of a boat on turquoise water"></video></figure>
       </div>
     </div>
   </section>
 
-  <section class="section paths-section">
+  <section class="section">
     <div class="wrap">
-      <p class="label center">Where would you like to go?</p>
-      <a id="travel-with-me" class="path path-trip reveal" href="https://chat.whatsapp.com/FKAaQu9WQhG2dxmVBWzwGS" target="_blank" rel="noopener">
-        <span class="tape tape-top"></span>
-        <span class="path-for">Group trips <span class="pill">Now booking</span></span>
-        <span class="path-title">Travel <em>With Me</em></span>
-        <span class="path-desc">Costa Rica Girls Surf &amp; Yoga Trip, 2027. Join the WhatsApp group.</span>
-        <span class="path-arrow">→</span>
-      </a>
+      <div class="section-head">
+        <p class="eyebrow">Explore</p>
+        <h2>Where would you like to go?</h2>
+      </div>
       <div class="paths">
-        <a class="path reveal" href="toolkit.html">
-          <span class="tape tape-top"></span>
-          <span class="path-for">Tips &amp; resources to travel on your own</span>
-          <span class="path-title">Travel <em>Toolkit</em></span>
-          <span class="path-arrow">→</span>
+        <a class="path reveal" href="resources.html">
+          <img class="path-img" src="media/sunset-balcony.jpg" alt="" loading="lazy">
+          <span class="path-arrow" aria-hidden="true">↗</span>
+          <span class="path-body">
+            <span class="path-for">For travelers &amp; followers</span>
+            <span class="path-title">Travel Tips &amp; Resources</span>
+          </span>
         </a>
-        <a class="path path-dark reveal" href="work.html">
-          <span class="tape tape-top"></span>
-          <span class="path-for">For brands &amp; businesses</span>
-          <span class="path-title">Work <em>With Me</em></span>
-          <span class="path-arrow">→</span>
+        <a class="path reveal" href="work.html">
+          <img class="path-img" src="media/morocco-doorway.jpg" alt="" loading="lazy">
+          <span class="path-arrow" aria-hidden="true">↗</span>
+          <span class="path-body">
+            <span class="path-for">For brands &amp; businesses</span>
+            <span class="path-title">Work With Me</span>
+          </span>
         </a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
+  <section id="contact" class="contact">
     <div class="wrap">
-      <p class="label center">Contact</p>
-      <h2>Let's talk.</h2>
+      <p class="eyebrow">Contact</p>
+      <h2>Let's work together.</h2>
       <a class="email" href="mailto:carmentonry@icloud.com">carmentonry@icloud.com</a>
-      <div class="socials">
-        <a href="https://www.tiktok.com/@carmenscamera" target="_blank" rel="noopener">TikTok</a>
-        <a href="https://www.instagram.com/carmenscameraaa" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.youtube.com/@carmenscameraa" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://www.linkedin.com/in/carmen-amelia-tonry-478890346/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+      <ul class="socials">
+        <li><a href="https://www.tiktok.com/@carmenscamera" target="_blank" rel="noopener">TikTok ↗</a></li>
+        <li><a href="https://www.instagram.com/carmenscameraaa" target="_blank" rel="noopener">Instagram ↗</a></li>
+        <li><a href="https://www.youtube.com/@carmenscameraa" target="_blank" rel="noopener">YouTube ↗</a></li>
+        <li><a href="https://www.linkedin.com/in/carmen-amelia-tonry-478890346/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      </ul>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2026 Carmen Amelia Tonry · shot on carmenscamera</p>
+    <div class="wrap footer-inner">
+      <span>© 2026 Carmen Amelia Tonry</span>
+      <span>Travel &amp; Media</span>
+    </div>
   </footer>
 
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>

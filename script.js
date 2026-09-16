@@ -1,19 +1,24 @@
 document.documentElement.classList.add('js');
 
+const nav = document.querySelector('.nav');
 const toggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');
 
-toggle.addEventListener('click', () => {
-  const isOpen = links.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', isOpen);
-});
+const setMenu = (open) => {
+  links.classList.toggle('open', open);
+  nav.classList.toggle('menu-open', open);
+  toggle.setAttribute('aria-expanded', open);
+};
 
-links.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    links.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  });
-});
+toggle.addEventListener('click', () => setMenu(!links.classList.contains('open')));
+links.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+
+const hero = document.querySelector('.hero');
+if (hero) {
+  const update = () => nav.classList.toggle('scrolled', window.scrollY > hero.offsetHeight - nav.offsetHeight);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -26,25 +31,11 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-const timecode = document.querySelector('.timecode');
-if (timecode) {
-  const start = performance.now();
-  const pad = (n) => String(n).padStart(2, '0');
-  setInterval(() => {
-    const elapsed = (performance.now() - start) / 1000;
-    const h = Math.floor(elapsed / 3600);
-    const m = Math.floor(elapsed / 60) % 60;
-    const s = Math.floor(elapsed) % 60;
-    const f = Math.floor((elapsed % 1) * 24);
-    timecode.textContent = `${pad(h)}:${pad(m)}:${pad(s)}:${pad(f)}`;
-  }, 1000 / 24);
-}
-
-// The film strip scrolls by -50%, so the frames are duplicated for a seamless loop.
-const track = document.querySelector('.film-track');
+// The gallery scrolls by -50%, so its tiles are duplicated for a seamless loop.
+const track = document.querySelector('.marquee-track');
 if (track) {
-  [...track.children].forEach((frame) => {
-    const copy = frame.cloneNode(true);
+  [...track.children].forEach((tile) => {
+    const copy = tile.cloneNode(true);
     copy.setAttribute('aria-hidden', 'true');
     track.appendChild(copy);
   });
