@@ -372,6 +372,38 @@ h2 {
   color: var(--trip-ink-2);
 }
 
+.trip-main .trip-note {
+  max-width: 36rem;
+  margin-top: 0.75rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.trip-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.6rem;
+}
+
+.trip-actions .btn {
+  justify-content: center;
+}
+
+.btn.btn-outline {
+  background: transparent;
+  color: var(--night);
+  box-shadow: inset 0 0 0 1px var(--night);
+}
+
+.btn.btn-outline:hover {
+  background: var(--night);
+  color: #fff;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1167,7 +1199,7 @@ a.row:hover .row-title {
     gap: 1.25rem;
   }
 
-  .trip .btn { justify-self: start; }
+  .trip-actions { flex-direction: row; flex-wrap: wrap; justify-self: start; }
 
   .page-media img,
   .page-media video {
