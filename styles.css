@@ -7,7 +7,8 @@
   --accent: #ff8a3d;
   --link: #0f4c5c;
   --about-bg: #fffcf0;
-  --trip-bg: var(--accent);
+  --warm: #f4a06c;
+  --trip-bg: var(--warm);
   --trip-ink: #0b2230;
   --trip-ink-2: rgba(11, 34, 48, 0.7);
   --ig-bg: #fffef8;
@@ -243,7 +244,7 @@ h2 {
 }
 
 .hero-tag span {
-  color: var(--accent);
+  color: var(--warm);
 }
 
 @keyframes fade-up {
@@ -276,6 +277,7 @@ h2 {
 }
 
 .about-text .eyebrow + p {
+  text-wrap: balance;
   font-size: clamp(1.45rem, 2.4vw, 2rem);
   font-weight: 500;
   line-height: 1.25;
