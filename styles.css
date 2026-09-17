@@ -702,6 +702,78 @@ a.row:hover .row-title {
   color: var(--bg);
 }
 
+/* ---------- expandable row (discount codes) ---------- */
+
+.row-group summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.row-group .row:first-child {
+  border-top: 0;
+}
+
+.row-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.row-group summary:hover {
+  padding-left: 0.75rem;
+}
+
+.row-group summary:hover .row-title {
+  color: var(--accent);
+}
+
+.row-group .when-open,
+.row-group[open] .when-closed {
+  display: none;
+}
+
+.row-group[open] .when-open {
+  display: inline;
+}
+
+.codes {
+  list-style: none;
+  padding: 0.5rem 0 1.5rem 5.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.code {
+  display: grid;
+  grid-template-columns: 12rem 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+.code + .code {
+  border-top: 1px dashed var(--line);
+}
+
+.code-brand {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.code-deal {
+  color: var(--ink-2);
+}
+
+.code-cta {
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.code-cta:hover {
+  color: var(--accent);
+}
+
 /* ---------- next page link ---------- */
 
 .next-section {
@@ -880,4 +952,14 @@ a.row:hover .row-title {
   .row-links {
     grid-column: 2;
   }
+
+  .codes { padding-left: 2.25rem; }
+
+  .code {
+    grid-template-columns: 1fr auto;
+    gap: 0.2rem 1rem;
+  }
+
+  .code-deal { grid-column: 1; grid-row: 2; }
+  .code-cta { grid-column: 2; grid-row: 1 / 3; }
 }
