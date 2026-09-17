@@ -322,6 +322,14 @@ h2 {
   opacity: 0.9;
 }
 
+.logo-set img.wordmark {
+  height: clamp(20px, 2.4vw, 28px);
+}
+
+.logo-set img.wordmark.wide {
+  height: clamp(26px, 3.2vw, 38px);
+}
+
 @keyframes logos {
   to { transform: translateX(-50%); }
 }
