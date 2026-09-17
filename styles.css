@@ -4,7 +4,7 @@
   --ink: #0b2230;
   --ink-2: #4f5d66;
   --line: rgba(11, 34, 48, 0.12);
-  --accent: #ff8a3d;
+  --accent: #e0679a;
   --link: #0f4c5c;
   --about-bg: #fffcf0;
   --warm: #60a8a0;
@@ -18,6 +18,13 @@
   --shade: 7, 24, 33;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+body.dark,
+.paths-section,
+.contact,
+.footer {
+  --accent: #ffb1cf;
 }
 
 body.dark {
@@ -171,7 +178,7 @@ h2 {
 .nav-links .nav-cta:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--night);
 }
 
 
@@ -486,7 +493,7 @@ h2 {
 
 .path:hover .path-arrow {
   background: var(--accent);
-  color: #fff;
+  color: var(--night);
 }
 
 /* ---------- contact ---------- */
@@ -884,7 +891,7 @@ a.row:hover .row-title {
 .detail-btn.primary:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--night);
 }
 
 /* ---------- open call ---------- */
@@ -909,7 +916,7 @@ a.row:hover .row-title {
 .open-btn {
   margin-top: 2.5rem;
   background: var(--accent);
-  color: #fff;
+  color: var(--night);
 }
 
 .open-btn:hover {
