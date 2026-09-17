@@ -7,7 +7,7 @@
   --accent: #ff8a3d;
   --link: #0f4c5c;
   --about-bg: #fffcf0;
-  --warm: #ee7acb;
+  --warm: #f0677f;
   --trip-bg: var(--warm);
   --trip-ink: #0b2230;
   --trip-ink-2: rgba(11, 34, 48, 0.7);
@@ -411,6 +411,10 @@ h2 {
 }
 
 /* ---------- path cards ---------- */
+
+.home .trip {
+  border-bottom: clamp(1.25rem, 2.5vw, 2rem) solid var(--about-bg);
+}
 
 .paths-section {
   --ink: #f4f2ee;
