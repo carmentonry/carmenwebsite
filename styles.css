@@ -892,30 +892,6 @@ a.row:hover .row-title {
   color: var(--ink-2);
 }
 
-.open-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2.5rem;
-}
-
-.open-list li {
-  padding: 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  font-size: 1.05rem;
-  line-height: 1.45;
-}
-
-.open-list span {
-  display: block;
-  margin-bottom: 0.9rem;
-  font-family: 'Geist Mono', monospace;
-  font-size: 0.72rem;
-  color: var(--accent);
-}
-
 .open-btn {
   margin-top: 2.5rem;
   background: var(--accent);
@@ -1110,7 +1086,6 @@ a.row:hover .row-title {
 
   .codes { padding-left: 2.25rem; }
   .detail { padding-left: 3.75rem; }
-  .open-list { grid-template-columns: 1fr; }
 
   .code {
     grid-template-columns: 1fr auto;
