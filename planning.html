@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=40">
+  <link rel="stylesheet" href="styles.css?v=41">
 </head>
 <body>
 
@@ -37,18 +37,18 @@
 
   <section class="section">
     <div class="wrap rows">
-      <details class="row-group reveal">
+      <details class="row-group reveal" id="booking">
         <summary class="row">
           <span class="row-num">01</span>
           <span class="row-body">
             <span class="row-title">1:1 Travel Design Meeting</span>
-            <span class="row-desc">$40 · 1 hour, designed entirely around you</span>
+            <span class="row-desc">1 hour, designed entirely around you</span>
           </span>
           <span class="row-cta"><span class="when-closed">Book a meeting +</span><span class="when-open">Close −</span></span>
         </summary>
         <div class="booking">
           <p>I'm here to help with planning, advice, and everything in between. Pick a time below.</p>
-          <iframe class="booking-frame" src="https://cal.com/carmenscamera/travelmeeting/embed?layout=month_view" title="Book a 1:1 Travel Design Meeting" loading="lazy"></iframe>
+          <div class="booking-embed" id="cal-booking"></div>
           <a class="code-cta" href="https://cal.com/carmenscamera/travelmeeting" target="_blank" rel="noopener">Open the booking page in a new tab ↗</a>
         </div>
       </details>
@@ -117,6 +117,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=28"></script>
+  <script src="script.js?v=41"></script>
 </body>
 </html>
