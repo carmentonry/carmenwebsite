@@ -848,7 +848,12 @@ a.row:hover .row-title {
     font-size: 1rem;
   }
   .ig-grid { grid-template-columns: repeat(3, 1fr); }
-  .path { aspect-ratio: 4 / 5; }
+  .paths { gap: 0.75rem; }
+  .paths-section { padding-block: 3.5rem; }
+  .path { aspect-ratio: 16 / 10; }
+  .path-body { gap: 0.4rem; padding: 1.25rem; }
+  .path-title { font-size: 1.75rem; }
+  .path-arrow { top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; font-size: 1rem; }
 
   .trip-inner {
     grid-template-columns: 1fr;
