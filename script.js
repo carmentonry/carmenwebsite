@@ -1,17 +1,6 @@
 document.documentElement.classList.add('js');
 
 const nav = document.querySelector('.nav');
-const toggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('.nav-links');
-
-const setMenu = (open) => {
-  links.classList.toggle('open', open);
-  nav.classList.toggle('menu-open', open);
-  toggle.setAttribute('aria-expanded', open);
-};
-
-toggle.addEventListener('click', () => setMenu(!links.classList.contains('open')));
-links.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
 
 const hero = document.querySelector('.hero');
 if (hero) {
