@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=39">
+  <link rel="stylesheet" href="styles.css?v=40">
 </head>
 <body>
 
@@ -37,14 +37,21 @@
 
   <section class="section">
     <div class="wrap rows">
-      <a class="row reveal" href="https://cal.com/carmenscamera/travelmeeting" target="_blank" rel="noopener">
-        <span class="row-num">01</span>
-        <span class="row-body">
-          <span class="row-title">1:1 Travel Design Meeting</span>
-          <span class="row-desc">1 hour, designed entirely around you</span>
-        </span>
-        <span class="row-cta">Book a meeting ↗</span>
-      </a>
+      <details class="row-group reveal">
+        <summary class="row">
+          <span class="row-num">01</span>
+          <span class="row-body">
+            <span class="row-title">1:1 Travel Design Meeting</span>
+            <span class="row-desc">$40 · 1 hour, designed entirely around you</span>
+          </span>
+          <span class="row-cta"><span class="when-closed">Book a meeting +</span><span class="when-open">Close −</span></span>
+        </summary>
+        <div class="booking">
+          <p>I'm here to help with planning, advice, and everything in between. Pick a time below.</p>
+          <iframe class="booking-frame" src="https://cal.com/carmenscamera/travelmeeting/embed?layout=month_view" title="Book a 1:1 Travel Design Meeting" loading="lazy"></iframe>
+          <a class="code-cta" href="https://cal.com/carmenscamera/travelmeeting" target="_blank" rel="noopener">Open the booking page in a new tab ↗</a>
+        </div>
+      </details>
       <div class="row reveal">
         <span class="row-num">02</span>
         <span class="row-body">
