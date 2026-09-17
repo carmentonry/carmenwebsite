@@ -702,6 +702,36 @@ a.row:hover .row-title {
   color: var(--bg);
 }
 
+/* ---------- campaign callout ---------- */
+
+.campaign {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem 2rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.campaign:hover {
+  border-color: var(--accent);
+}
+
+.campaign-label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.campaign-text {
+  font-size: 1.1rem;
+}
+
 /* ---------- expandable row (discount codes) ---------- */
 
 .row-group summary {
@@ -952,6 +982,8 @@ a.row:hover .row-title {
   .row-links {
     grid-column: 2;
   }
+
+  .campaign { grid-template-columns: 1fr; gap: 0.5rem; }
 
   .codes { padding-left: 2.25rem; }
 
