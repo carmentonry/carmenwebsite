@@ -804,6 +804,129 @@ a.row:hover .row-title {
   color: var(--accent);
 }
 
+/* ---------- service details ---------- */
+
+.row-group[open] > summary {
+  border-bottom-color: transparent;
+}
+
+.detail {
+  padding: 0 0 2rem 5.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail p {
+  max-width: 40rem;
+  font-size: 1.05rem;
+}
+
+.detail .detail-label {
+  margin-top: 1.25rem;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-2);
+}
+
+.detail-examples {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.detail-examples li {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.detail-btn {
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.detail-btn.primary,
+.detail-btn:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.detail-btn.primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ---------- open call ---------- */
+
+.open-call {
+  padding-block: clamp(4.5rem, 9vw, 7.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.open-call h2 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.open-lead {
+  max-width: 40rem;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: var(--ink-2);
+}
+
+.open-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.open-list li {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.open-list span {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+.open-btn {
+  margin-top: 2.5rem;
+  background: var(--accent);
+  color: #fff;
+}
+
+.open-btn:hover {
+  background: #fff;
+  color: var(--night);
+}
+
 /* ---------- next page link ---------- */
 
 .next-section {
@@ -986,6 +1109,8 @@ a.row:hover .row-title {
   .campaign { grid-template-columns: 1fr; gap: 0.5rem; }
 
   .codes { padding-left: 2.25rem; }
+  .detail { padding-left: 3.75rem; }
+  .open-list { grid-template-columns: 1fr; }
 
   .code {
     grid-template-columns: 1fr auto;
